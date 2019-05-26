@@ -1,0 +1,16 @@
+body {
+  background-image: url("../assets/DCUniverse.png");
+  background-repeat: space repeat;
+  background-color: #1E212A;
+  background-size: 300px 300px;
+  background-attachment: fixed;
+  color: white;
+}
+
+#ColumnaContenido {
+  background-color: #40444D;
+}
+
+hr {
+  border: 0.3px solid white;
+}
