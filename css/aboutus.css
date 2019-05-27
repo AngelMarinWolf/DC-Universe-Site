@@ -1,0 +1,11 @@
+html {
+  height: 98%;
+}
+
+body, #Contenido {
+  height: 100%;
+}
+
+.img-thumbnail{
+  height: 250px;
+}
