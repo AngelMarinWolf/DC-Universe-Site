@@ -111,7 +111,29 @@
                   La contraseña no cumple con las condiciones necesarias.
                 </div>
               </div>
-              <div class="form-group col-md-6 offset-md-6">
+              <div class="form-group col-md-6 text-center">
+                <fieldset>
+                  <legend>Sexo</legend>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="radioSexoMasculino" name="radioSexo"
+                    class="custom-control-input" required>
+                    <label class="custom-control-label" for="radioSexoMasculino">
+                      Masculino
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="radioSexoFemenino" name="radioSexo"
+                    class="custom-control-input">
+                    <label class="custom-control-label" for="radioSexoFemenino">
+                      Femenino
+                    </label>
+                  </div>
+                  <div class="invalid-feedback">
+                    Por favor seleccione su sexo.
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form-group col-md-6">
                 <label for="inputPasswordRepeat">Repita Contraseña</label>
                 <input type="password" class="form-control" id="inputPasswordRepeat"
                        placeholder="Repita Contraseña" required
@@ -122,11 +144,54 @@
               </div>
             </div>
 
+            <div class="form-group">
+              <label for="selectFaccion">Faccion</label>
+              <select class="custom-select" id="selectFaccion">
+                <option selected>Selecciona tu faccion.</option>
+                <option value="1">Heroe</option>
+                <option value="2">Villano</option>
+              </select>
+              <small id="FaccionHelp" class="form-text text-muted">
+                Cual es tu faccion?.
+              </small>
+            </div>
 
             <div class="form-group">
-              <div class="form-check text-center">
-                <input class="form-check-input" type="checkbox" id="TerminosCheck" required>
-                <label class="form-check-label" for="TerminosCheck">
+              <label for="inputTextArea">Personaje Favorito</label>
+              <textarea class="form-control" id="inputTextArea" rows="3"></textarea>
+              <small id="TextAreaHelp" class="form-text text-muted">
+                Cuentanos sobre tu Personaje favorito.
+              </small>
+            </div>
+
+            <div class="form-group">
+              <fieldset>
+                <legend>Que te gustaria recibir?</legend>
+              </fieldset>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input class="custom-control-input" type="checkbox" id="VideosCheck">
+                <label class="custom-control-label" for="VideosCheck">
+                  Videos
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input class="custom-control-input" type="checkbox" id="NoticiasCheck">
+                <label class="custom-control-label" for="NoticiasCheck">
+                  Noticias
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input class="custom-control-input" type="checkbox" id="ImagenesCheck">
+                <label class="custom-control-label" for="ImagenesCheck">
+                  Imagenes
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="custom-control custom-checkbox text-center">
+                <input class="custom-control-input" type="checkbox" id="TerminosCheck" required>
+                <label class="custom-control-label" for="TerminosCheck">
                   Acepto <a href="#">terminos y condiciones</a> de uso.
                 </label>
                 <div class="invalid-feedback">
