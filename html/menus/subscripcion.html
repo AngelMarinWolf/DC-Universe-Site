@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../../DC.ico">
+  <title>DC Universe - Supergirl</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../../css/fondo.css">
+  <link rel="stylesheet" href="../../css/directores-menu.css">
+  <script type="text/javascript" src="../../js/subscripcion.js"></script>
+</head>
+
+<body>
+
+  <section id="Navbar">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+            <img src="../../DC.ico" width="30" height="30"
+                 class="d-inline-block align-top" alt="Logotipo">
+            DC Universe
+          </a>
+
+        <!-- Elementos en la barra de navegacioin -->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../html/menus/galerias.html">Galerias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../html/menus/directores.html">Directores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../html/menus/aboutus.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-danger" href="../../html/menus/subscripcion.html">Subscribete!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section id="Contenido">
+    <div class="container-fluid mt-3 mb-3">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 card shadow p-3" id="ColumnaContenido">
+          <h2 class="text-center">Subscripcion</h2>
+          <hr>
+          <p class="text-center">
+            Subscribete y recibe las ultimas noticias sobre tus series favoritas.
+          </p>
+
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-10">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" class="form-control" id="inputNombre"
+                       placeholder="Nombre Completo" required>
+                <small id="NombreHelp" class="form-text text-muted">
+                  Por favor ingrese su Nombre Completo.
+                </small>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputEdad">Edad</label>
+                <input type="number" max="100" min="16" step="1" class="form-control"
+                       id="inputEdad" placeholder="Edad" required>
+                <small id="EdadHelp" class="form-text text-muted">
+                  Diga su edad, debe ser mayor de 16 para poder registrarse.
+                </small>
+                <div class="invalid-feedback">
+                  Coloque un numero entre el 16 y 100.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail"
+                       placeholder="Email@ejemplo.com" required
+                       pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <small id="emailHelp" class="form-text text-muted">
+                  Por favor ingrese su Correo Electronico.
+                </small>
+                <div class="invalid-feedback">
+                  Ingrese un correo electronico valido.
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword"
+                       placeholder="Contraseña" required
+                       pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$">
+                <small id="emailHelp" class="form-text text-muted">
+                  Ingrese una contraseña con caracteres Mayusculas y Minusculas
+                  con numeros, minimo de 8 caracteres.
+                </small>
+                <div class="invalid-feedback">
+                  La contraseña no cumple con las condiciones necesarias.
+                </div>
+              </div>
+              <div class="form-group col-md-6 offset-md-6">
+                <label for="inputPasswordRepeat">Repita Contraseña</label>
+                <input type="password" class="form-control" id="inputPasswordRepeat"
+                       placeholder="Repita Contraseña" required
+                       pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}$">
+                <div class="invalid-feedback">
+                  La contraseña no cumple con las condiciones necesarias.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="form-check text-center">
+                <input class="form-check-input" type="checkbox" id="TerminosCheck" required>
+                <label class="form-check-label" for="TerminosCheck">
+                  Acepto <a href="#">terminos y condiciones</a> de uso.
+                </label>
+                <div class="invalid-feedback">
+                  Por favor Acepte los terminos y condiciones.
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-danger btn-lg btn-block">Subscribete!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Footer">
+    <footer class="footer fixed-bottom bg-dark">
+      <div class="container">
+        <p align="center" class="mb-0">
+          <strong>Edith Escobedo</strong> | Ulises Prado
+        </p>
+      </div>
+    </footer>
+  </section>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
