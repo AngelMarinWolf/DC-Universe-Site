@@ -1,17 +1,144 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="./DC.ico">
+  <title>DC Universe - Supergirl</title>
+
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>DC Universe</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./css/fondo.css">
+  <link rel="stylesheet" href="./css/principal.css">
 </head>
 
 <body>
-  <h1>DC Universe</h1>
+  <section id="CoverImage" class="cover">
+    <!-- <img width="100%" src="./assets/DCUniverse.jpg" class="img-fluid" alt="DCUniverse"> -->
+  </section>
+
+  <section id="Navbar">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./DC.ico" width="30" height="30"
+                 class="d-inline-block align-top" alt="Logotipo">
+            DC Universe
+          </a>
+
+        <!-- Elementos en la barra de navegacioin -->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galerias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Directores</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-danger" href="#">Subscribete!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section id="Contenido">
+    <div class="container-fluid mt-3 mb-3">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 card shadow p-3" id="ColumnaContenido">
+          <h2 class="text-center">Series</h2>
+          <hr>
+
+          <!-- Cards de las series -->
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Serie -->
+              <div class="col-lg-2 col-md-4 col-xs-6 p-3 card card-serie bg-dark text-white">
+                <img class="card-img img-fluid" src="./assets/Arrow/A3.jpeg" alt="Supergirl">
+                <a href="#">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center p-3">
+                    <h5 class="card-title text-center m-0 pb-2">ARROW</h5>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Serie -->
+              <div class="col-lg-2 col-md-4 col-xs-6 p-3 card card-serie bg-dark text-white">
+                <img class="card-img img-fluid" src="./assets/flash/f7.jpg" alt="Supergirl">
+                <a href="#">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center p-3">
+                    <h5 class="card-title text-center m-0 pb-2">FLASH</h5>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Serie -->
+              <div class="col-lg-2 col-md-4 col-xs-6 p-3 card card-serie bg-dark text-white">
+                <img class="card-img img-fluid" src="./assets/Gotham/G1.jpeg" alt="Supergirl">
+                <a href="#">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center p-3">
+                    <h5 class="card-title text-center m-0 pb-2">GOTHAM</h5>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Serie -->
+              <div class="col-lg-2 col-md-4 col-xs-6 p-3 card card-serie bg-dark text-white">
+                <img class="card-img img-fluid" src="./assets/LeyendsOfTomorrow/LoT1.jpg" alt="Supergirl">
+                <a href="#">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center p-3">
+                    <h5 class="card-title text-center m-0 pb-2">LEYENDS OF TOMORROW</h5>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Serie -->
+              <div class="col-lg-2 col-md-4 col-xs-6 p-3 card card-serie bg-dark text-white">
+                <img class="card-img img-fluid" src="./assets/Supergirl/s2.jpg" alt="Supergirl">
+                <a href="#">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center p-3">
+                    <h5 class="card-title text-center m-0 pb-2">SUPERGIRL</h5>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Serie -->
+              <div class="col-lg-2 col-md-4 col-xs-6 p-3 card card-serie bg-dark text-white">
+                <img class="card-img img-fluid" src="./assets/Titans/T4.jpeg" alt="Supergirl">
+                <a href="#">
+                  <div class="card-img-overlay d-flex align-items-end justify-content-center p-3">
+                    <h5 class="card-title text-center m-0 pb-2">TITANS</h5>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Footer">
+    <footer class="footer fixed-bottom bg-dark">
+      <div class="container">
+        <p align="center" class="mb-0">
+          <strong>Edith Escobedo</strong> | Ulises Prado
+        </p>
+      </div>
+    </footer>
+  </section>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
