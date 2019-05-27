@@ -1,0 +1,13 @@
+.card-title {
+  width: 100%;
+  background-image: linear-gradient(to bottom right,rgba(30,33,42,0), rgba(30,33,42,1));
+}
+
+.card-serie {
+  background-color: transparent !important;
+  border: 0;
+}
+
+.card-serie a {
+  color: white;
+}
